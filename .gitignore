@@ -1,0 +1,11 @@
+*.toc
+*.lof
+*.lol
+*.lot
+*.gz
+*.toc
+*.aux
+*.lof
+*.log
+*.vs
+.DS_Store
