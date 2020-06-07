@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper,titlepage]{article}
-\usepackage{License_style}
+\usepackage{main-styles}
+\usepackage{thesis-constants}
 
 % the document should be compiled with pdfLaTex
 
@@ -11,17 +12,23 @@
 
 %##############################################################################
 
-\input{Title.tex}
+\input{title-00.tex}
 \cleardoublepage
 
-\input{Abstract.tex}
+\input{title-01.tex}
+\cleardoublepage
+
+\input{aviz.tex}
+\cleardoublepage
+
+\input{abstract.tex}
 \clearpage
 
-\input{Rezumat.tex}
+\input{rezumat.tex}
 \clearpage
 
 \tableofcontents
-\addtocontents{toc}{\protect\thispagestyle{empty}} % no page number on the table of contents page
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 \cleardoublepage
 
 \listoffigures
@@ -35,30 +42,30 @@
 
 \phantomsection
 \addcontentsline{toc}{section}{Abbreviations}
-\input{Abbreviations.tex}
+\input{abbreviations.tex}
 \thispagestyle{empty}
 \cleardoublepage
 
 \phantomsection
 \addcontentsline{toc}{section}{Introduction}
-\input{Introduction.tex}
+\input{introduction.tex}
 \cleardoublepage
 
-\input{Chapter_1.tex}
+\input{chapter-1.tex}
 \cleardoublepage
 
-\input{Chapter_2.tex}
+\input{chapter-2.tex}
 \cleardoublepage
 
-\input{Chapter_3.tex}
+\input{chapter-3.tex}
 \cleardoublepage
 
-\input{Chapter_4.tex}
+\input{chapter-4.tex}
 \cleardoublepage
 
 \phantomsection
 \addcontentsline{toc}{section}{Conclusions}
-\input{Conclusions.tex}
+\input{conclusions.tex}
 \cleardoublepage
 
 \cleardoublepage

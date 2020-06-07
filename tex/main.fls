@@ -1,14 +1,14 @@
 PWD c:\Users\eterman\Projects\thesis\tex
 INPUT C:\Users\eterman\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.tex
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.log
+INPUT c:\Users\eterman\Projects\thesis\tex\main.tex
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.log
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT c:\Users\eterman\Projects\thesis\tex\License_style.sty
-INPUT c:\Users\eterman\Projects\thesis\tex\License_style.sty
+INPUT c:\Users\eterman\Projects\thesis\tex\main-styles.sty
+INPUT c:\Users\eterman\Projects\thesis\tex\main-styles.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
@@ -129,15 +129,17 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rota
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.aux
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.aux
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.aux
+INPUT c:\Users\eterman\Projects\thesis\tex\thesis-constants.sty
+INPUT c:\Users\eterman\Projects\thesis\tex\thesis-constants.sty
+INPUT c:\Users\eterman\Projects\thesis\tex\main.aux
+INPUT c:\Users\eterman\Projects\thesis\tex\main.aux
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.aux
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def
-INPUT c:\Users\eterman\Projects\thesis\tex\Title.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Title.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\title-00.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\title-00.tex
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-2.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-2.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -154,34 +156,49 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfon
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx6.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.pdf
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.pdf
 INPUT C:\Users\eterman\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT c:\Users\eterman\Projects\thesis\tex\Abstract.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Abstract.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Rezumat.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Rezumat.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\title-01.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\title-01.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.toc
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.toc
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.toc
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lof
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lof
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lof
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lol
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lol
-OUTPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.lol
-INPUT c:\Users\eterman\Projects\thesis\tex\Abbreviations.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Abbreviations.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Introduction.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Introduction.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_1.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_1.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\abstract.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\abstract.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\rezumat.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\rezumat.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\main.toc
+INPUT c:\Users\eterman\Projects\thesis\tex\main.toc
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.toc
+INPUT c:\Users\eterman\Projects\thesis\tex\main.lof
+INPUT c:\Users\eterman\Projects\thesis\tex\main.lof
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.lof
+INPUT c:\Users\eterman\Projects\thesis\tex\main.lol
+INPUT c:\Users\eterman\Projects\thesis\tex\main.lol
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.lol
+INPUT c:\Users\eterman\Projects\thesis\tex\abbreviations.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\abbreviations.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\introduction.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\introduction.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-1.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-1.tex
 INPUT ..\figures\1_soap.pdf
 INPUT ..\figures\1_soap.pdf
 INPUT ..\figures\1_soap.pdf
@@ -194,8 +211,8 @@ INPUT ..\figures\1_ember_architecture.pdf
 INPUT ..\figures\1_ember_architecture.pdf
 INPUT ..\figures\1_ember_architecture.pdf
 INPUT ..\figures\1_ember_architecture.pdf
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_2.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_2.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-2.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-2.tex
 INPUT ..\figures\2-user-use-case-diagram.png
 INPUT ..\figures\2-user-use-case-diagram.png
 INPUT ..\figures\2-user-use-case-diagram.png
@@ -236,22 +253,48 @@ INPUT ..\figures\2-timelapse-data-class-diagram.jpg
 INPUT ..\figures\2-timelapse-data-class-diagram.jpg
 INPUT ..\figures\2-timelapse-data-class-diagram.jpg
 INPUT ..\figures\2-timelapse-data-class-diagram.jpg
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_3.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_3.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_4.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Chapter_4.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-3.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-3.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT ..\src\camera.py
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT ..\src\camera.py
+INPUT ..\src\camera.py
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt12.tfm
+INPUT ..\src\camera_manager.py
+INPUT ..\src\camera_manager.py
+INPUT ..\src\camera_manager.py
+INPUT ..\src\stub_capture_img.py
+INPUT ..\src\stub_capture_img.py
+INPUT ..\src\stub_capture_img.py
+INPUT ..\src\gp_detect_all.py
+INPUT ..\src\gp_detect_all.py
+INPUT ..\src\gp_detect_all.py
+INPUT ..\src\gp_capture_img.py
+INPUT ..\src\gp_capture_img.py
+INPUT ..\src\gp_capture_img.py
+INPUT ..\src\gp_capture_preview.py
+INPUT ..\src\gp_capture_preview.py
+INPUT ..\src\gp_capture_preview.py
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-4.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-4.tex
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
-INPUT c:\Users\eterman\Projects\thesis\tex\Conclusions.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\Conclusions.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\conclusions.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\conclusions.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\biblio.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\biblio.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\My_thesis.aux
+INPUT c:\Users\eterman\Projects\thesis\tex\main.aux
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx6.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx6.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx7.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx7.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
@@ -268,3 +311,7 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

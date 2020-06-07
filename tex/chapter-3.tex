@@ -1,0 +1,123 @@
+\section{Implementation Part}
+
+\phantomsection
+In the previous chapters were discussed the concepts covered by DSLR camera controlling project. The research of the ideas is crucial given that the applications aims a niche that is relatively new in the market. To be sure that the platform development start from the right foot, a thorough architecture design, modeled in UML language, was provided in the previous chapter. What follows now is the description of the implementation part. An exhaustive description of every step will be given, including code snippets, the technologies used and the reason of their choice.
+
+\subsection{Used Tools}
+In order to achieve a better performance in this application development, there were choose specific tools that are offering the possibility to implement and extend the application's functionality.
+
+\vspace{0.3cm}
+\textbf{PyCharm}
+
+PyCharm brings you a smart coding assistance for Python languages, Javascript, HTML and CSS. Enjoy code completion, powerful navigation features, on-the-fly error detection, and refactoring assistance for all of these languages. PyCharm provides advanced coding assistance for Django, Angular, Javascript and more. All in one IDE. The IDE analyzes your project to provide the best code completion results for all supported languages. Hundreds of built-in inspections report any possible issues right as you type and suggest quick-fix options. PyCharm helps you get around your code more efficiently and save time when working with large projects. Jump to a method, function or variable definition in just one click, or search for the usages.It also supports advanced features like remote SHH project development and a lot more.
+
+PyCharm provides powerful built-in tools for debugging, testing and tracing your server-side and client-side applications. With minimum configuration required and thoughtful integration into the IDE, these tasks are much easier with PyCharm. Place the breakpoints, step through the code, and evaluate expressions – all without leaving the IDE.
+
+PyCharm integrates with popular command line tools for web development, providing you with a productive, streamlined development experience without using the command line. PyCharm (community edition) is built on top of the open-source IntelliJ Platform, which JetBrains have been developing and perfecting for over 15 years. Enjoy the fine-tuned, yet highly customizable experience it provides to fit your development workflow. PyCharm provides a unified UI for working with many popular Version Control Systems, ensuring a consistent user experience across git, GitHub, SVN, Mercurial, and Perforce. PyCharm is extremely customizable. Adjust it to perfectly suit your coding style, from shortcuts, fonts and visual themes to tool windows and editor layout. \cite{pycharm}\vspace{0.3cm}
+
+\textbf{gPhoto}
+
+gPhoto is a set of software applications and libraries for use in digital photography. gPhoto supports not just retrieving of images from camera devices, but also upload and remote controlled configuration and capture, depending on whether the camera supports those features. Released under the GNU Lesser General Public License, gPhoto is free software.
+
+gPhoto supports more than 2500 cameras as of June 2019. It is cross-platform, running under Linux, FreeBSD, NetBSD and other Unix-like operating systems.
+
+gPhoto has support for the Picture Transfer Protocol (PTP) and will also connect to devices that use the Media Transfer Protocol (MTP). Many cameras are not supported by gPhoto, but have support for the USB mass storage device class, which is well-supported under Linux.
+
+gPhoto supports camera tethering control, preview, viewfinder in PTP or camera specific protocols on numerous cameras. \cite{gPhoto}
+
+\vspace{0.3cm}
+\textbf{SSH}
+
+For a quick, cheap and secure connection with the system that has the cameras connected, SSH brings all the required tools to ease the use and management of the \ThesisTitle.
+
+Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH.
+
+SSH provides a secure channel over an unsecured network by using a client–server architecture, connecting an SSH client application with an SSH server. The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Microsoft Windows. Windows 10 uses OpenSSH as its default SSH client and SSH server.
+
+SSH was designed as a replacement for Telnet and for unsecured remote shell protocols such as the Berkeley rsh and the related rlogin and rexec protocols. Those protocols send information, notably passwords, in plaintext, rendering them susceptible to interception and disclosure using packet analysis. The encryption used by SSH is intended to provide confidentiality and integrity of data over an unsecured network, such as the Internet, although files leaked by Edward Snowden indicate that the National Security Agency can sometimes decrypt SSH, allowing them to read, modify and selectively suppress the contents of SSH sessions. \cite{ssh}
+
+\vspace{0.3cm}
+\textbf{YKUSH Yepkit}
+
+YKUSH boards allow the user to selectively switch ON and OFF the power of each of the USB devices connected to the Hub downstream ports. The control is done using an application in the host system (e.g., PC to which the YKUSH board is connected. Switching ON/OFF a YKUSH downstream port with a device connected to it has the same effect as to physically Connecting/Disconnecting a Device to a port of a typical USB hub.
+
+The switching control is performed by sending commands to the on-board micro-controller (YKUSH board control unit), which is seen by host as a HID USB device not requiring the installation of specific drivers. The communication between the host and the board control unit is based on a simple message protocol. The communication protocol is documented and detailed in the Product Manual available for download bellow, in the Documents and Resources section. \cite{yepkit}
+
+\vspace{0.3cm}
+\subsection{Camera abstractions}
+
+Dependency Inversion principle is as simple as it is important: High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. From Bob Martin's definition, it mentions that abstractions should not depend on details. Details should depend on abstractions \cite{solid-d} \cite{uncle-bob-book}. An important detail of this definition is, that \textbf{high-level} and \textbf{low-level} modules depend on the abstraction.
+
+\vspace{0.3cm}
+Following this principle, it was important to distinguish which parts of this application should be treated as details. It may not be obvious at first, but after a through investigation the camera and all its management can be treated as an abstract concept. Following the same principle, we can distinguish a few abstractions worth noting:
+\begin{itemize}
+    \item Camera \& Camera management (gPhoto);
+    \item Camera reset logic (Ykush);
+    \item Scheduling (Django scheduling);
+    \item File transfer (rsync);
+\end{itemize}
+
+\vspace{0.3cm}
+From an architectural point of view, a DSLR camera is a detail. The fact that gPhoto tool is used to communicate with cameras is also a detail. To avoid tightly coupling the \textbf{Business} to such details, making it hard to change, it's important to abstract the core logic from it. In the \textbf{\mbox{listing \ref{camera_interface}}} it is represented the general interface of a camera. The 2 most important functionalities are: get/set config and capture image. It also has preview capturing for getting a quick lightweight preview of the camera, useful for live previewing.
+
+\vspace{0.3cm}
+\lstinputlisting[language=Python, caption={Camera Interface}, label=camera_interface]{../src/camera.py}
+
+\vspace{0.3cm}
+To facilitate the communication with all the connected cameras, a Camera Manager is introduced. It is designed to abstract the orchestration of cameras in a way that the user would not need to know anything about the synchronization problems gPhoto has. In the \textbf{\mbox{listing \ref{camera_manager_interface}}} it is represented a rough summary of what this manager is expected to be able to do.
+
+\vspace{0.3cm}
+\lstinputlisting[language=Python, caption={Camera Manager Interface}, label=camera_manager_interface]{../src/camera_manager.py}
+
+\vspace{0.3cm}
+Inspecting the requirements, the client was in a need for a small but powerful functionality. He would need to quickly detect all connected cameras. Therefore, a \textit{detect all cameras} functionality is requested from the manager. After the cameras are detected, the \textit{cameras} property should be filled with \textit{Camera} instances. This would allow the user to iterate through all the detected cameras an run the required functionality.
+
+\vspace{0.3cm}
+To have a serializable method of communicating between the user and the system, a unique Id is required. The concrete cameras are expected to expose a unique identifier which would allow the user to query a specific camera from the manager. The user would then be able to remove a camera from the manager if required.
+
+\vspace{0.3cm}
+\subsection{Camera implementations}
+Being able to test the application without any connected cameras brings a large range of benefits, some of them would be:
+
+\begin{itemize}
+    \item Independent development of the client side;
+    \item Stress testing;
+    \item Less budget consumption for camera renting;
+\end{itemize}
+
+\vspace{0.3cm}
+This brings us to the conclusion that a fake camera would perfectly fit for the development of this application. A more technical name for such a concept would be a \textit{test stub}. In advanced polymorphism computer science, test stubs are programs that simulate the behaviours of software components that a module undergoing tests depends on. Test stubs are mainly used in incremental testing's top-down approach \cite{test-stub}. Additionally, these stubs will also help in testing if the right abstractions were made, helping in developing a more robust and reliable architecture which would drastically help in further development.
+
+\vspace{0.3cm}
+In the \textbf{\mbox{listing \ref{stub-img-capture}}} is represented a piece of code of how these stubs work. Mainly, the constructor receives all the required information, otherwise it auto-generates predefined data. For example, when a preview or image is requested, it simply draws two triangles using the \textit{pillow} library for drawings.
+
+\vspace{0.3cm}
+\lstinputlisting[language=Python, caption={Stub image capture}, label=stub-img-capture]{../src/stub_capture_img.py}
+
+\vspace{0.3cm}
+Next, in the \textbf{\mbox{listing \ref{gp-detect-all}}} it is represented how \textit{gPhoto} tool is used to detect all detected cameras.
+
+\vspace{0.3cm}
+\lstinputlisting[language=Python, caption={gPhoto detect all cameras}, label=gp-detect-all]{../src/gp_detect_all.py}
+
+\vspace{0.3cm}
+\textit{gPhoto} is a very fragile library. It may sometimes work on OSX but fail to run some simple commands on the Linux environment. To avoid any unforeseen bugs and to simply ease the development process, a synchronization system was introduced. This system would only allow a single caller to communicate with the cameras, otherwise the library usually fails (this is in regard to \textit{\_gp\_lock}).
+
+\vspace{0.3cm}
+Detecting all cameras is quite simple using \textit{gPhoto}. The first step is to ensure that all cameras are disconnected. Next, it gets all the camera names and ports. Afterwards, information about the available ports are loaded. Finally, depending on the port and the loaded information, the \textit{GpCamera}s are created. \textit{GpCamera} is a concrete implementation of \textit{Camera}. Now, the user can simply iterate through the cameras and execute the required functionality.
+
+\vspace{0.3cm}
+Now, the most important functionality is represented in the \textbf{\mbox{listing \ref{gp-capture-img}}}. The entire application relies on this specific functionality, therefore it became slightly sophisticated.
+
+\lstinputlisting[language=Python, caption={gPhoto capture image}, label=gp-capture-img]{../src/gp_capture_img.py}
+
+\vspace{0.3cm}
+Before starting any communication with the camera, a lock is put in place to prevent any other threads from interfering. Then, a new connection is open. Next, the \textit{gPhoto} library captures an image with the preset settings and saves it on the local storage. Then the next step is to move it on the current system, which is also done through \textit{gPhoto}. When the file is moved, it is given a new name which follows the complex file naming requirements described earlier. And finally, the full path of the new image on the local system is returned.
+
+\vspace{0.3cm}
+While image capturing might seem a big overwhelming at first, preview capturing on the other hand is much more simple. In the \textbf{\mbox{listing \ref{gp-capture-preview}}} it is represented how this process is taken care of.
+
+\lstinputlisting[language=Python, caption={gPhoto capture preview}, label=gp-capture-preview]{../src/gp_capture_preview.py}
+
+\vspace{0.3cm}
+Since the file is lightweight and short living, it is read in memory and returned, therefore no additional tasks are required. This makes live previewing a lot faster than trying to store it on the local storage.
