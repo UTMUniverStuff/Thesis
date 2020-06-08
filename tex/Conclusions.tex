@@ -1,6 +1,15 @@
 \section*{Conclusions}
 \phantomsection
 
-DSLR camera controlling project is the outcome of this thesis work. It is a tool for automating the work with cameras, but specifically, it mostly focuses on automating the process of reliably taking long term time-lapses.
+\ThesisTitle is the outcome of this thesis work. It is a tool for automating the work with cameras, but specifically, it mostly focuses on automating the process of reliably taking long term time-lapses. The uniqueness of this application is that the targeted users requires no additional input once the application has been set, as all the tasks have been completely automated. An instance of this application is currently running since Summer 2019 at a warehouse at CERN, with the only required user input being that the client had to re-plug the camera because someone has tripped over the wires. No additional actions were needed for this system to continue working. On the other hand, the applications the client was using were extremely hard to automate. Those applications were extremely prone to stopping because of different reasons: power outage, someone would trip over the cables and re-plug them back but the applications would stop working, someone would simply power off the camera because of a private event which would also break the existing applications. Additionally the client had to manually do health checks every week and check if the photos were successfully transferred on the server. On top of that, since the existing applications were desktop-only, the user had to use a tool like Remote Desktop to connect to the system running the applications. This was extremely painful as the internet speed is not very high in that warehouse.
+
+\vspace{0.3cm}
+But the \ThesisTitle solves all these problems. Instead of using a Remote Desktop application, the user can access the cameras with a few clicks from a browser. With a few additional SSH tricks, the client can access its cameras from anywhere with no additional costs. In case of a failure, email notifications are dispatched and a few configurable failure strategies can be set up. A full log of all the events is accessible within the application, making it a lot easier to investigate and solve the problems, or to simply check the application's progress.
+
+\vspace{0.3cm}
+A quintessential part for the future development of the \ThesisTitle is to make the communication with the cameras even more reliable to prevent any possible capture failures with any supported camera. The application currently experiences minor problems after every weekend, because the schedule is configured to not take any pictures during this time, making the cameras fail 2-3 times every Monday.
+
+\vspace{0.3cm}
+Another future implementation would be to include authentication and authorization. Currently the application did not require any additional security protections because the photos taken are free to view for everyone. Even if there were any security requirements, it could be solved using SSH tunneling. But an authentication mechanism would be much simpler for the user and for its management.
 
 \clearpage
