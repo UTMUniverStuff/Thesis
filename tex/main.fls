@@ -252,8 +252,81 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT c:\Users\eterman\Projects\thesis\tex\title-00.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\title-00.tex
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+OUTPUT c:\Users\eterman\Projects\thesis\tex\main.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT ..\src\shitty-template.pdf
+INPUT c:\Users\eterman\Projects\thesis\tex\declaration.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\declaration.tex
+INPUT ..\figures\declaration.png
+INPUT ..\figures\declaration.png
+INPUT ..\figures\declaration.png
+INPUT ..\figures\declaration.png
+INPUT ..\figures\declaration.png
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\eterman\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-2.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-2.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -267,72 +340,32 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cms
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-1.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-OUTPUT c:\Users\eterman\Projects\thesis\tex\main.pdf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\eterman\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT c:\Users\eterman\Projects\thesis\tex\title-01.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\title-01.tex
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
-INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
-INPUT c:\Users\eterman\Projects\thesis\tex\declaration.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\declaration.tex
-INPUT ..\figures\declaration.png
-INPUT ..\figures\declaration.png
-INPUT ..\figures\declaration.png
-INPUT ..\figures\declaration.png
-INPUT ..\figures\declaration.png
-INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
-INPUT c:\Users\eterman\Projects\thesis\tex\aviz.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT c:\Users\eterman\Projects\thesis\tex\abstract.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\abstract.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\rezumat.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\rezumat.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT c:\Users\eterman\Projects\thesis\tex\main.toc
 INPUT c:\Users\eterman\Projects\thesis\tex\main.toc
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 OUTPUT c:\Users\eterman\Projects\thesis\tex\main.toc
 INPUT c:\Users\eterman\Projects\thesis\tex\main.lof
 INPUT c:\Users\eterman\Projects\thesis\tex\main.lof
@@ -402,9 +435,12 @@ INPUT ..\figures\2-timelapse-data-class-diagram.jpg
 INPUT ..\figures\2-timelapse-data-class-diagram.jpg
 INPUT c:\Users\eterman\Projects\thesis\tex\chapter-3.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\chapter-3.tex
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
 INPUT ..\src\camera.py
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr7t.tfm
@@ -416,9 +452,12 @@ INPUT ..\src\camera_manager.py
 INPUT ..\src\camera_manager.py
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\courier\pcrr7t.vf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT ..\src\stub_capture_img.py
 INPUT ..\src\stub_capture_img.py
 INPUT ..\src\stub_capture_img.py
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT ..\src\gp_detect_all.py
 INPUT ..\src\gp_detect_all.py
 INPUT ..\src\gp_detect_all.py
