@@ -2,11 +2,15 @@
 \usepackage{main-styles}
 \usepackage{thesis-constants}
 
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{times}
+
+\usetikzlibrary{matrix}
+
 % the document should be compiled with pdfLaTex
 
 \begin{document}
-
-% \numberwithin{lstlisting}{section}
 
 \phantomsection
 
@@ -16,6 +20,9 @@
 \cleardoublepage
 
 \input{title-01.tex}
+\cleardoublepage
+
+\input{declaration.tex}
 \cleardoublepage
 
 \input{aviz.tex}
