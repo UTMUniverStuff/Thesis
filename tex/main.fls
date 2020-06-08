@@ -277,8 +277,62 @@ INPUT ..\src\gp_capture_img.py
 INPUT ..\src\gp_capture_preview.py
 INPUT ..\src\gp_capture_preview.py
 INPUT ..\src\gp_capture_preview.py
+INPUT ..\src\cron_schedule.py
+INPUT ..\src\cron_schedule.py
+INPUT ..\src\cron_schedule.py
+INPUT ..\src\cron-scheduler.py
+INPUT ..\src\cron-scheduler.py
+INPUT ..\src\cron-scheduler.py
+INPUT ..\src\asp_cheduler.py
+INPUT ..\src\asp_cheduler.py
+INPUT ..\src\asp_cheduler.py
+INPUT ..\src\camera_capture_img_and_download.py
+INPUT ..\src\camera_capture_img_and_download.py
+INPUT ..\src\camera_capture_img_and_download.py
+INPUT ..\src\camera_preview_source.py
+INPUT ..\src\camera_preview_source.py
+INPUT ..\src\camera_preview_source.py
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT ..\src\live_preview.html
+INPUT ..\src\live_preview.html
+INPUT ..\src\live_preview.html
 INPUT c:\Users\eterman\Projects\thesis\tex\chapter-4.tex
 INPUT c:\Users\eterman\Projects\thesis\tex\chapter-4.tex
+INPUT ..\figures\test-and-doc\main-view.png
+INPUT ..\figures\test-and-doc\main-view.png
+INPUT ..\figures\test-and-doc\main-view.png
+INPUT ..\figures\test-and-doc\main-view.png
+INPUT ..\figures\test-and-doc\main-view.png
+INPUT ..\figures\test-and-doc\live-preview.png
+INPUT ..\figures\test-and-doc\live-preview.png
+INPUT ..\figures\test-and-doc\live-preview.png
+INPUT ..\figures\test-and-doc\live-preview.png
+INPUT ..\figures\test-and-doc\live-preview.png
+INPUT ..\figures\test-and-doc\cron-scheduling.png
+INPUT ..\figures\test-and-doc\cron-scheduling.png
+INPUT ..\figures\test-and-doc\cron-scheduling.png
+INPUT ..\figures\test-and-doc\cron-scheduling.png
+INPUT ..\figures\test-and-doc\cron-scheduling.png
+INPUT ..\figures\test-and-doc\timelapse-scheduling.png
+INPUT ..\figures\test-and-doc\timelapse-scheduling.png
+INPUT ..\figures\test-and-doc\timelapse-scheduling.png
+INPUT ..\figures\test-and-doc\timelapse-scheduling.png
+INPUT ..\figures\test-and-doc\timelapse-scheduling.png
+INPUT ..\figures\test-and-doc\logs.png
+INPUT ..\figures\test-and-doc\logs.png
+INPUT ..\figures\test-and-doc\logs.png
+INPUT ..\figures\test-and-doc\logs.png
+INPUT ..\figures\test-and-doc\logs.png
+INPUT ..\figures\test-and-doc\camera-settings.png
+INPUT ..\figures\test-and-doc\camera-settings.png
+INPUT ..\figures\test-and-doc\camera-settings.png
+INPUT ..\figures\test-and-doc\camera-settings.png
+INPUT ..\figures\test-and-doc\camera-settings.png
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-5.tex
+INPUT c:\Users\eterman\Projects\thesis\tex\chapter-5.tex
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
 INPUT ..\figures\4-agile-chart.png
@@ -315,3 +369,5 @@ INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsf
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\eterman\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb

@@ -121,3 +121,53 @@ While image capturing might seem a big overwhelming at first, preview capturing 
 
 \vspace{0.3cm}
 Since the file is lightweight and short living, it is read in memory and returned, therefore no additional tasks are required. This makes live previewing a lot faster than trying to store it on the local storage.
+
+\vspace{0.3cm}
+\subsection{Scheduling}
+
+Creating a schedule was never an easy task. Initially the client required a very specific use case: "A schedule that triggers camera capture every minute or so from Monday to Friday, from 8 AM until 8 PM". Using timers for this use case would easily solve the problem. But then, the client may want a whole different type of schedule. For example, he may require a schedule that would trigger the capture event every second day, or a schedule with lunch breaks, etc.. This would create a whole lot of additional unnecessary complications. For every new type of schedule, the scheduling part would need to be modified.
+
+To not reinvent the wheel, the best tool for this job became \textit{cron}. This software utility is a time-based job scheduler in Unix-like computer operating systems. Users that set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. It typically automates system maintenance or administration—though its general-purpose nature makes it useful for things like downloading files from the Internet and downloading email at regular intervals. The origin of the name cron is from the Greek word for time chronos. Cron is most suitable for scheduling repetitive tasks. Scheduling one-time tasks can be accomplished using the associated \textit{at} utility \cite{cron}.
+
+Using the \textit{apscheduler} python library allows the use of this very tool to create schedules. The \textbf{\mbox{listing \ref{cron-schedule}}} contains the definition of a cron schedule used in this application.
+
+\lstinputlisting[language=Python, caption={Cron schedule}, label=cron-schedule]{../src/cron_schedule.py}
+
+\vspace{0.3cm}
+Again, to allow the use of different tools other than \textit{apscheduler}, the business logic defines an abstraction over the scheduling process which is represented in the \textbf{\mbox{listing \ref{cron-scheduler}}}.
+
+\lstinputlisting[language=Python, caption={Cron scheduler}, label=cron-scheduler]{../src/cron-scheduler.py}
+
+\vspace{0.3cm}
+The start method would be used for starting all the existing schedules. For example \textit{apscheduler} works by reading and writing to a predefined persistence mechanism. In \ThesisTitle it is configured to use a lightweight SQLite database. This allows persisting the jobs even when the application is forcefully stopped or a power outage happens, which is a critical sale point for this application. As described earlier, the existing applications had trouble automating this part. In the \textbf{\mbox{listing \ref{cron-scheduler}}} it is described the implementation of the \textit{apscheduler}.
+
+\lstinputlisting[language=Python, caption={Aps Scheduler implementation}, label=aps-scheduler]{../src/asp_cheduler.py}
+
+\vspace{0.3cm}
+At the start, it configures to use the \textit{DjangoJobStore} which simply tells the scheduler to use the same persistence mechanism as defined in Django. Basically, instead of directly referencing the library from the core, the core application defines an interface which is latter implemented by a third party library. In other words \textit{ApsScheduler} is a wrapper around library's own scheduler.
+
+Using such a tool brings its own risks and complications though. The user would need to learn a bit how to define cron expressions. For this reason, this part must be thoroughly documented so that it's much easier to get started. 
+
+\vspace{0.3cm}
+\subsection{Web API}
+
+For the web part, the application uses the Django framework. It is an open-source python web framework used for rapid development, pragmatic, maintainable, clean design, and secures websites. Django is a Python-based free and open-source web framework that follows the model-template-view (MTV) architectural pattern. It is maintained by the Django Software Foundation (DSF), an American independent organization as a non-profit organization \cite{django}.
+
+Each \textit{view} represents a specific use case of the application. Each such use case is separated in its own class making development independent of other views. For resolving the required dependencies, the Dependency Injection principle is used. In software engineering, dependency injection is a technique in which an object receives other objects that it depends on. These other objects are called dependencies. In the typical "using" relationship the receiving object is called a client and the passed (that is, "injected") object is called a service. The code that passes the service to the client can be many kinds of things and is called the injector. Instead of the client specifying which service it will use, the injector tells the client what service to use. The "injection" refers to the passing of a dependency (a service) into the object (a client) that would use it \cite{di}. For dependency injection, the application uses \textit{pinject} tool which is a is a dependency injection library for python \cite{pinject}.
+
+The \textbf{\mbox{listing \ref{capture-img-view}}} represents how Django uses the application's core functionality to expose an API. The routing for this view is latter configured in a Django setting file.
+
+\lstinputlisting[language=Python, caption={Capture image View}, label=capture-img-view]{../src/camera_capture_img_and_download.py}
+
+\vspace{0.3cm}
+First, this view resolves the \textit{CameraCtrlService} from the object graph (\textit{pinject}). Then it tries to call the capture image functionality from the service, returning a FileResponse which is basically a downloadable file for the end user. In case of a failure, like camera is not found or an internal camera error, a respective error is returned to the user.
+
+
+\vspace{0.3cm}
+For live previewing a slightly different approach was taken. Instead of simply returning the current preview, a \textit{StreamingResponse} is returned, which allows endlessly streaming camera previews. The \textbf{\mbox{listing \ref{live-preview-view}}} represents the view for the live preview source.
+
+\lstinputlisting[language=Python, caption={Live preview View}, label=live-preview-view]{../src/camera_preview_source.py}
+
+Sending a big file in Django would best be to stream it in chunks. Similarly, instead of streaming chunks of a file, it streams camera previews in an endless loop, which is automatically canceled on user's request. As a result, the HTML for this functionality becomes very simple and transparent, which can be seen in the \textbf{\mbox{listing \ref{live-preview-template}}}.
+
+\lstinputlisting[language=HTML, caption={Live preview HTML}, label=live-preview-template]{../src/live_preview.html}
