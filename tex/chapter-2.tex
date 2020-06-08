@@ -15,7 +15,7 @@ To offer a detailed overview of how the entire system works, a set of sequence d
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=15cm]{2-user-sequence-diagram-get-cam-settings}
+\includegraphics[width=13cm]{2-user-sequence-diagram-get-cam-settings}
 \caption{Camera settings sequence diagram}\label{user_sequence}
 \end{figure}
 
@@ -49,7 +49,7 @@ The processing of the capture failures is a key feature of this application as w
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=7cm]{2-timelapse-failure-activity}
+\includegraphics[width=7.5cm]{2-timelapse-failure-activity}
 \caption{Time-lapse failure activity diagram}\label{timelapse_failure_activity}
 \end{figure}
 
@@ -59,7 +59,7 @@ First in the figure \mbox{\ref{camera_manager_class_diagram}} is described how t
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=18cm]{2-camera-manager-class-diagram}
+\includegraphics[width=14cm]{2-camera-manager-class-diagram}
 \caption{Camera management class diagram}\label{camera_manager_class_diagram}
 \end{figure}
 
@@ -67,27 +67,6 @@ Next follows a class diagram on how a time-lapse is persisted on the platform. I
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=13cm]{2-timelapse-data-class-diagram}
+\includegraphics[width=9cm]{2-timelapse-data-class-diagram}
 \caption{Time-lapse data class diagram}\label{timelapse_data_class_diagram}
 \end{figure}
-
-
-% The platform modules and their behavior were described until now. Another important part of the application is the set of libraries it uses and their purpose, depicted in \mbox{figure \ref{component_diagram}}. Because the project is divided in two parts there are two set of dependencies and libraries. The data mining part is a console applications, hence the set of required libraries is small. The essential library is rest\_client, used for requesting web pages and getting their content. Nokogiri is used for parsing HTML and extracting the necessary elements. Savon is a library for SOAP communications, needed for NLP processing. Mongoid is used for database communication, as it was discussed above. The client part of application requires more libraries because it consists from more logical components. Some gems (a ruby term for library) are shared between the logical components, for example Mongoid. Sinatra framework is used to build the web applications. The main goal is to handle client's HTTP requests. Faye library is used to host the websocket server. It is handy because it provides a higher level of functionality than a simple websocket. Haml gem aims to process the haml files for creating web page content. Haml is a dialect of HTML, simply put another markup language. Sidekiq is a library used for running asynchronous jobs. Redis is a dependency required by Sidekiq and it is used as a message queue system. D3 is a JavaScript library used for drawing plots and charts. This sums it up. Of cores there are also other dependency libraries.
-
-% \begin{figure}[!h]
-% \centering
-% \includegraphics[width=16cm]{2_component_diagram}
-% \caption{Component diagram of OpenMedia}\label{component_diagram}
-% \end{figure}
-
-% The deployment diagram gives a good understanding of the whole system. OpenMedia platform has a complex structure and consist of more than a few modules, see \mbox{figure \ref{deployment}}. In order to launch the application, not every module needs to be up and running. Data mining application is a console ruby applications which only requires to run once in a while in order to keep the database content up to date. Moreover the NLP server is an external web service maintained by \emph{Institutul de Cercetare pentru Inteligență artificială Mihai Drăgănescu, Academia Română}. The diagram shows in details the complexity of OpenMedia platform. It also depicts the ways of communication between logical units of the application, concluding that some modules not only communicate with multiple entities, they also use different communication protocols. For instance Sinatra and Sidekiq servers communicates with three modules each, where the communication protocols are Mongoid API, Redis API, and the HTTP protocol. Another aspect is the operating systems used by every component. Linux is the main operating system for most of the modules. Regarding the client application, the operating system doesn't matter as long as it has installed a modern web browser. For Racai web service the operating system is unknown. This proves how powerful are the web services. A developer is not concerned about the internal infrastructure of the web service. As long as it complains a standard protocol a successful communication is achieved.
-
-% \begin{figure}[!ht]
-% \centering
-% \includegraphics[width=18cm]{2_deployment}
-% \caption{OpenMedia deployment diagram}\label{deployment}
-% \end{figure}
-
-% Therefore the UML diagrams concentrate on the application prototype. They cover the most useful standard diagrams: use case diagrams, sequence diagrams, class diagrams, state diagrams, activity diagrams, components diagrams and deployment diagrams. All diagrams express the relationships, structural and behavioral aspects of the system. Modeling the application is for more reasons. The first and the obvious one, is to communicate the application architecture and its behavior. But the important aspect is, while modeling the platform the problem is understood better.
-
-% The implementation chapter focuses on the provided UML design, implements the classes and follows the use cases and sequence diagrams to define the flow of the application. The application components and dependencies will probably extend to a bigger degree. This concludes the UML description of the project, that aimed at presenting the most relevant aspect of the system and covering the general architecture of the application. The UML methodology offered a good documentation basis and a clear view on requirements of the software.
